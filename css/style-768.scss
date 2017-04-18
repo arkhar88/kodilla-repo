@@ -1,0 +1,163 @@
+@import 'reusables';
+@media (max-width: 768px) {
+    .section-spacer {
+        margin-top: 50px;
+    }
+
+    .section-spacer--big {
+        margin-top: 80px;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .intro-header h2 {
+        font-size: 35px;
+    }
+
+    .intro-header p {
+        font-size: 20px;
+        margin-bottom: 35px;
+        padding: 0 18px;
+    }
+    /*-----------header, first row --------------*/
+    header {
+        text-align: center;
+        height: auto;
+        overflow: hidden;
+
+        nav.container {
+            .title-logo h1 {
+                font-size: 30px;
+                line-height: 90px;
+                margin: 0;
+                float: none;
+            }
+
+            ul {
+                margin: 0 auto 20px;
+                padding: 0;
+                float: none;
+
+                & > li {
+                    margin: 0;
+                    float: none;
+                }
+
+                & > li a {
+                    line-height: 34px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    /*---------rotartor with slogan, second row--------------*/
+    section.rotator {
+        height: 500px;
+
+        .slogan-box {
+            left: 0;
+            bottom: 0;
+            padding: 28px;
+
+            p {
+                margin: 0;
+                font-size: 28px;
+            }
+
+            p span {
+                line-height: 42px;
+            }
+        }
+    }
+    /*---------------features, third row---------------*/
+
+    section.container .features-container {
+        line-height: 20px;
+        margin-bottom: 30px;
+
+        i {
+            width: 100px;
+            height: 100px;
+            border-radius: 18px;
+            padding: 22px;
+            font-size: 50px;
+        }
+
+        h3 {
+           margin: 20px 0 17px 0;
+        }
+    }
+    /*------------selected works, fourth row---------------*/
+    section div.gallery-mosaic .row {
+        height: auto;
+        overflow: auto;
+
+        .col-xs-12,
+        .col-xs-6 {
+            @include no-margin;
+        }
+
+        .gm-img-container {
+            height: 200px;
+            float: left;
+        }
+    }
+    /*------------team, fifth row--------------*/
+    section.container .employee-img-container h3 {
+        margin: 18px 0 30px;
+    }
+    /*-------------------- tablet info sixth row------------------*/
+    section.tablet-info-container {
+        div.section-spacer--big {
+            margin-top: 0;
+        }
+
+        .container > .row {
+            margin-bottom: 60px;
+        }
+
+        .col-lg-7 {
+            padding: 0 18px;
+
+            .col-lg-4 {
+                padding-left: 0;
+            }
+        }
+    }
+    /*-----------------followers-data, seventh row-----------------*/
+    section.follower-data .col-lg-3 h2 {
+        margin-top: 20px;
+    }
+    /*----------------------contact info, eigth row---------------*/
+    section.contact-info-background .ci-text {
+        margin-bottom: 30px;
+
+        p,
+        table {
+            font-size: inherit;
+        }
+
+        h2 {
+          margin-bottom: 18px;
+        }
+
+        h2::after {
+            width: 20%;
+        }
+
+        .social-media-container .icon-btn {
+            margin-bottom: 14px;
+        }
+    }
+    /*-------------foooter-------------------*/
+    footer p {
+        padding: 25px;
+        line-height: 24px;
+    }
+}

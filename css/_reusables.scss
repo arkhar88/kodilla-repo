@@ -1,0 +1,122 @@
+@import url( 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Ranga:400,700');
+
+// ---font---
+$lato-stack: 'Lato', sans-serif;
+$ranga-stack: 'Ranga', cursive;
+
+// ----color-----
+$base-gray: #313131;
+$base-white: white;
+$base-hover: #00c7e8;
+$base-fadeout-gray: rgba(50, 50, 50, 0.6);
+
+//-------sizes---------
+$header-h: 112px;
+$footer-h: 100px;
+$gallery-img-h: 250px;
+$gallery-img-h-medium: 170px;
+$employee-img-h: 270px;
+$employee-img-h-medium: 170px;
+
+//-------margin,padding------
+$ci-mobile-padding: 18px;
+
+@mixin no-margin {
+    padding: 0;
+    margin: 0;
+}
+//-----other----------
+@mixin uppercase-spacing {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@mixin backg-lighter ($backg-color) {
+  background-color: $backg-color;
+
+  &:hover {
+    background-color: lighten($backg-color, 15%);
+  }
+}
+// -----------------------------------------
+
+body {
+    font-family: $lato-stack;
+    color: $base-gray;
+    @include no-margin;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 900;
+    @include uppercase-spacing;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 900;
+    @include uppercase-spacing;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #6d6d6d;
+    letter-spacing: 1px;
+}
+/*|||||<<< REUSABLES  >  >  >  > ||||||*/
+.white-bold-uppercase {
+    color: $base-white;
+    font-weight: 700;
+    @include uppercase-spacing;
+}
+
+.container-60 {
+    max-width: 1000px;
+}
+
+.section-spacer {
+    margin-top: 80px;
+}
+
+.section-spacer--big {
+    margin-top: 110px;
+}
+
+.fade-in-dark {
+    position: absolute;
+    @include backg-lighter ($base-fadeout-gray);
+    width: 100%;
+    height: inherit;
+    color: $base-white;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.fade-in-dark:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.fade-in-dark--circle {
+    border-radius: 50%;
+}
+
+.clear-span::after {
+    content: "";
+    display: block;
+}
+
+.intro-header {
+    text-align: center;
+}
+
+.intro-header h2 {
+    font-size: 45px;
+    margin: 0 0 25px 0;
+}
+
+.intro-header p {
+    font-size: 26px;
+    margin-bottom: 45px;
+}

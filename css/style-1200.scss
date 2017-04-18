@@ -1,0 +1,136 @@
+@import 'reusables';
+
+@media (min-width: 768px) and (max-width: 1200px){
+
+  h2 {
+      font-size: 26px;
+  }
+
+  h3 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  .intro-header h2 {
+      font-size: 35px;
+      margin: 0 0 20px 0;
+  }
+
+  .intro-header p {
+      font-size: 20px;
+      margin-bottom: 35px;
+      padding: 0 18px;
+  }
+
+  /*-------------header, first row----------------*/
+
+  header {
+      background-color: $base-gray;
+      height: $header-h;
+      width: 100%;
+
+      nav.container {
+      padding: 0;
+
+          & > .title-logo h1 {
+              font-size: 30px;
+          }
+
+          ul {
+              & > li {
+                  margin: 0 10px 0 0;
+              }
+
+              & > li a {
+                  font-size: 16px;
+                  letter-spacing: 1px;
+              }
+          }
+      }
+  }
+
+  /*---------------features, third row---------------*/
+
+  section.container .row .features-container {
+      line-height: 27px;
+  }
+
+  /*---------rotartor with slogan, second row--------------*/
+
+  section.rotator .slogan-box p {
+      margin: 0 400px 0 0;
+      font-size: 30px;
+  }
+
+  /*------------selected works, fourth row---------------*/
+
+  section div.gallery-mosaic .row {
+      height: $gallery-img-h-medium;
+
+      .gm-img-container {
+          i {
+              margin: 0 4px;
+          }
+          .gm-img-icons {
+              font-size: 15px;
+              line-height: $gallery-img-h-medium;
+          }
+      }
+  }
+
+  /*------------team, fifth row---------------*/
+
+  section.container .employee-img-container {
+      p {
+          line-height: $employee-img-h-medium;
+      }
+
+      .employee-img-round {
+          margin: 0 auto;
+          border-radius: 50%;
+          width: $employee-img-h-medium;
+          height: $employee-img-h-medium;
+      }
+  }
+
+  /*-------------------- tablet info sixth row------------------*/
+
+  section.tablet-info-container {
+
+      .col-lg-7,
+      .ti-img {
+          padding: 0;
+          margin-bottom: 20px;
+      }
+
+      div.section-spacer--big {
+          margin-top: 50px;
+      }
+  }
+
+  /*----------------------contact info, eigth row---------------*/
+
+  section.contact-info-background .ci-text {
+      p,
+      table {
+          font-size: inherit;
+      }
+
+      h2 {
+        margin-bottom: 18px;
+      }
+
+      h2::after {
+          width: 20%;
+      }
+
+      .social-media-container .icon-btn {
+              margin-bottom: 14px;
+          }
+
+  }
+
+}
