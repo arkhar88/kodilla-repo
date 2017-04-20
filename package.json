@@ -1,0 +1,29 @@
+{
+  "name": "kodilla-test",
+  "version": "1.0.0",
+  "description": "test project for testing marvels of GRUNT",
+  "main": "index.js",
+  "scripts": {
+    "test": "kd-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkhar88/kodilla-repo.git"
+  },
+  "keywords": [
+    "test",
+    "grunt"
+  ],
+  "author": "arkhar88",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arkhar88/kodilla-repo/issues"
+  },
+  "homepage": "https://github.com/arkhar88/kodilla-repo#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
