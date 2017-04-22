@@ -18,7 +18,7 @@
                  files: [{
                      expand: true,
                      cwd: 'images/',
-                     src: ['**/*.{png,jpg,gif}'],
+                     src: ['*.{png,jpg,gif}'],
                      dest: 'images/build/'
                  }]
              }
@@ -26,7 +26,7 @@
 
          watch: {
              scripts: {
-                 files: ['sass/*.sass'],
+                 files: ['sass/*.scss'],
                  tasks: ['sass'],
                  options: {
                      spawn: false,
@@ -37,6 +37,7 @@
      // Load the plugins tasks
      grunt.loadNpmTasks('grunt-sass');
      grunt.loadNpmTasks('grunt-contrib-imagemin');
+     grunt.loadNpmTasks('grunt-contrib-watch');
      // Default task(s).
      grunt.registerTask('default', ['sass', 'imagemin']);
 
